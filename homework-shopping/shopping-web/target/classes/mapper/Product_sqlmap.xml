@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springmvc.dao.ProductMapper">
+    <select id="getAllProducts" resultType="com.springmvc.domain.po.Product">
+        SELECT * FROM product;
+    </select>
+
+    <select id="getAllUnPurchasedProducts" resultType="com.springmvc.domain.po.Product">
+        SELECT * FROM product WHERE product_status = 0;
+    </select>
+    <insert id="addProduct" parameterType="com.springmvc.domain.po.Product" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO product(product_name,product_price,product_amount,product_desc,product_content,product_url,product_status)
+        VALUES(#{productName},#{productPrice},#{productAmount},#{productDesc},#{productContent},#{productUrl},#{productStatus});
+    </insert>
+
+    <delete id="deleteUnPurcharseProduct" parameterType="java.lang.Long">
+        DELETE FROM product WHERE id = #{id};
+    </delete>
+
+    <select id="findProductById" parameterType="java.lang.Long" resultType="com.springmvc.export.response.ProductResp">
+        SELECT * FROM  product WHERE id=#{id};
+    </select>
+
+    <select id="findProductsByIds" parameterType="java.util.List"
+            resultType="com.springmvc.export.response.ProductResp">
+        SELECT * FROM product WHERE id IN
+        <foreach collection="productIds" item="productId" index="index" open="(" separator="," close=")">
+            #{productId}
+        </foreach>
+    </select>
+</mapper>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springmvc.dao.ShopCartMapper">
+    <insert id="addProduct2ShopCart" parameterType="com.springmvc.export.request.ShopCartReq"
+            useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO shop_cart(customer_id,product_id,product_quantity) VALUES (#{customerId},#{productId},#{productQuantity});
+    </insert>
+    <delete id="deleteProductFromShopCart" parameterType="com.springmvc.export.request.ShopCartReq">
+        DELETE FROM shop_cart WHERE customer_id = #{customerId} AND product_id = #{productId};
+    </delete>
+    <select id="findProductsByCustomerId" parameterType="com.springmvc.export.request.ShopCartReq"
+            resultType="com.springmvc.export.response.ShopCartResp">
+        SELECT * FROM shop_cart WHERE customer_id = #{customerId};
+    </select>
+
+    <select id="findRecordByCustomerIdAndProductId"
+            parameterType="com.springmvc.export.request.ShopCartReq"
+            resultType="com.springmvc.export.response.ShopCartResp">
+        SELECT * FROM shop_cart WHERE customer_id = #{customerId} AND product_id = #{productId};
+    </select>
+
+    <update id="updateProductInShopCart"
+            parameterType="com.springmvc.export.request.ShopCartReq">
+        UPDATE shop_cart SET product_quantity = #{productQuantity}
+        WHERE product_id = #{productId} AND customer_id = #{customerId};
+    </update>
+</mapper>
