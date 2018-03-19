@@ -51,6 +51,32 @@
         <property name="maxInMemorySize" value="40960" />
     </bean>
 
-
+    <bean id="freemarkerConfig"
+          class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+        <!-- 模版位置，这里配置了下面就不用配了 -->
+        <property name="templateLoaderPath" value="\WEB-INF\template" />
+        <property name="freemarkerSettings"><!-- 一些设置 -->
+            <props>
+                <prop key="template_update_delay">0</prop>
+                <prop key="default_encoding">UTF-8</prop>
+                <prop key="number_format">0.##########</prop>
+                <prop key="datetime_format">yyyy-MM-dd HH:mm:ss</prop>
+                <prop key="classic_compatible">true</prop>
+                <prop key="template_exception_handler">ignore</prop>
+            </props>
+        </property>
+    </bean>
+    <!-- freeMarker视图解析器 -->
+    <bean id="freemarkerViewResolver"
+          class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.freemarker.FreeMarkerView"
+        />
+        <property name="viewNames" value="*.ftl" />
+        <property name="contentType" value="text/html; charset=utf-8" />
+        <property name="cache" value="true" />
+        <property name="suffix" value="" />
+        <!-- 视图先走这个freemarker的，再走原始的 -->
+        <property name="order" value="0" />
+    </bean>
 
 </beans>
