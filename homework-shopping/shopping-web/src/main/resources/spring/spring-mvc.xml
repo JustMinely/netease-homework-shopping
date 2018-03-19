@@ -33,12 +33,12 @@
     </bean>
 
     <!-- 定义跳转的文件的前后缀 ，视图模式配置-->
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <!-- 这里的配置我的理解是自动给后面action的方法return的字符串加上前缀和后缀，变成一个 可用的url地址 -->
-        <property name="prefix" value="/WEB-INF/page/" />
-        <property name="suffix" value=".jsp" />
-        <property name="viewClass" value ="org.springframework.web.servlet.view.JstlView"/>
-    </bean>
+    <!--<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
+        <!--&lt;!&ndash; 这里的配置我的理解是自动给后面action的方法return的字符串加上前缀和后缀，变成一个 可用的url地址 &ndash;&gt;-->
+        <!--<property name="prefix" value="/WEB-INF/page/" />-->
+        <!--<property name="suffix" value=".jsp" />-->
+        <!--<property name="viewClass" value ="org.springframework.web.servlet.view.JstlView"/>-->
+    <!--</bean>-->
 
     <!-- 配置文件上传，如果没有使用文件上传可以不用配置，当然如果不配，那么配置文件中也不必引入上传组件包 -->
     <bean id="multipartResolver"
@@ -53,9 +53,9 @@
 
     <bean id="freemarkerConfig"
           class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
-        <!-- 模版位置，这里配置了下面就不用配了 -->
+        <!-- 模版位置 -->
         <property name="templateLoaderPath" value="\WEB-INF\template" />
-        <property name="freemarkerSettings"><!-- 一些设置 -->
+        <property name="freemarkerSettings">
             <props>
                 <prop key="template_update_delay">0</prop>
                 <prop key="default_encoding">UTF-8</prop>
@@ -67,16 +67,18 @@
         </property>
     </bean>
     <!-- freeMarker视图解析器 -->
-    <bean id="freemarkerViewResolver"
+    <bean id="viewResolver"
           class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
-        <property name="viewClass" value="org.springframework.web.servlet.view.freemarker.FreeMarkerView"
-        />
-        <property name="viewNames" value="*.ftl" />
-        <property name="contentType" value="text/html; charset=utf-8" />
         <property name="cache" value="true" />
-        <property name="suffix" value="" />
-        <!-- 视图先走这个freemarker的，再走原始的 -->
-        <property name="order" value="0" />
+        <property name="prefix" value="" />
+        <property name="viewClass" value="org.springframework.web.servlet.view.freemarker.FreeMarkerView" />
+        <property name="suffix" value=".html" />
+        <property name="contentType" value="text/html;charset=UTF-8"/>
+        <property name="requestContextAttribute" value="request" />
+        <property name="exposeSpringMacroHelpers" value="true" />
+        <property name="exposeRequestAttributes" value="true" />
+        <property name="exposeSessionAttributes" value="true" />
+        <property name="order" value="1" />
     </bean>
 
 </beans>

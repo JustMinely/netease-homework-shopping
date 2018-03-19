@@ -3,6 +3,8 @@
 <mapper namespace="com.springmvc.dao.CustomerMapper">
     <select id="getCustomerById" parameterType="java.lang.Long" resultType="com.springmvc.domain.po.Customer">
         SELECT * FROM customer WHERE id = #{id};
-
+    </select>
+    <select id="getCustomerByName" parameterType="java.lang.String" resultType="com.springmvc.domain.po.Customer">
+        SELECT * FROM customer WHERE customer_name = #{customerName};
     </select>
 </mapper>

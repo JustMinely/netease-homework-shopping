@@ -13,5 +13,17 @@
     <bean id="customerMapper" parent="abstractMapper">
         <property name="mapperInterface" value="com.springmvc.dao.CustomerMapper"/>
     </bean>
+    <bean id="productMapper" parent="abstractMapper">
+        <property name="mapperInterface" value="com.springmvc.dao.ProductMapper"/>
+    </bean>
+    <bean id="flowLogMapper" parent="abstractMapper">
+        <property name="mapperInterface" value="com.springmvc.dao.FlowLogMapper"/>
+    </bean>
+    <bean id="publishMapper" parent="abstractMapper">
+        <property name="mapperInterface" value="com.springmvc.dao.PublishMapper"/>
+    </bean>
+    <bean id="shopCartMapper" parent="abstractMapper">
+        <property name="mapperInterface" value="com.springmvc.dao.ShopCartMapper"/>
+    </bean>
 
 </beans>

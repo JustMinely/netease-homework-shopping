@@ -8,6 +8,7 @@ import com.springmvc.service.ProductService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -36,7 +37,7 @@ public class ProductController {
         try {
             result = productService.getAllProducts();
             ModelAndView modelAndView = new ModelAndView("index");
-            modelAndView.addObject("products", result);
+            modelAndView.addObject("productList", result);
             return modelAndView;
         } catch (Exception e) {
             LOGGER.error("getAllProducts...fail", GsonUtils.toJSONString(result), e);
@@ -78,5 +79,12 @@ public class ProductController {
             LOGGER.error("deleteProduct writeJson fail...req={}", GsonUtils.toJSONString(req), e);
         }
     }
+
+    @RequestMapping("freemarkerTest")
+    public String getFirstPage(Model model) {
+        model.addAttribute("test", "my name is freemarker");
+        return "hello";
+    }
+
 
 }

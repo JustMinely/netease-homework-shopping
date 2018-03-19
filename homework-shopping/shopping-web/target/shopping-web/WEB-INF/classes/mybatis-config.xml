@@ -8,5 +8,9 @@
     </settings>
     <mappers>
         <mapper resource="mapper/Customer_sqlmap.xml"/>
+        <mapper resource="mapper/FlowLog_sqlmap.xml"/>
+        <mapper resource="mapper/Product_sqlmap.xml"/>
+        <mapper resource="mapper/Publish_sqlmap.xml"/>
+        <mapper resource="mapper/ShopCart_sqlmap.xml"/>
     </mappers>
 </configuration>
