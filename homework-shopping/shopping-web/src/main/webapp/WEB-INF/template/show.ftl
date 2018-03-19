@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<#include "/include/head.ftl">
+<#include "include/head.ftl">
 <body>
-<#include "/include/support.ftl">
-<#include "/include/header.ftl">
+<#include "include/support.ftl">
+<#include "include/header.ftl">
 <div class="g-doc">
     <#if !product>
     <div class="n-result">
@@ -28,7 +28,7 @@
                     </#if>
                 </#if>
                 <#if user && user.usertype==1>
-                <a href="/edit?id=${product.id}" class="u-btn u-btn-primary">编 辑</a>
+                <a href="../edit?id=${product.id}" class="u-btn u-btn-primary">编 辑</a>
                 </#if>
             </div>
         </div>
@@ -41,8 +41,7 @@
     </div>
     </#if>
 </div>
-<#include "/include/footer.ftl">
-<script type="text/javascript" src="/js/global.js"></script>
-<script type="text/javascript" src="/js/pageShow.js"></script>
+<script type="text/javascript" src="../js/global.js"></script>
+<script type="text/javascript" src="../js/pageShow.js"></script>
 </body>
 </html>

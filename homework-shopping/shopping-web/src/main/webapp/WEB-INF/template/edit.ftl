@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<#include "/include/head.ftl">
+<#include "include/head.ftl">
 <body>
-<#include "/include/support.ftl">
-<#include "/include/header.ftl"><div class="g-doc">
+<#include "include/support.ftl">
+<#include "include/header.ftl"><div class="g-doc">
     <div class="m-tab m-tab-fw m-tab-simple f-cb">
         <h2>内容编辑</h2>
     </div>
@@ -55,8 +55,8 @@
     </div>
     </#if>
 </div>
-<#include "/include/footer.ftl">
-<script type="text/javascript" src="/js/global.js"></script>
-<script type="text/javascript" src="/js/public.js"></script>
+
+<script type="text/javascript" src="../js/global.js"></script>
+<script type="text/javascript" src="../js/public.js"></script>
 </body>
 </html>

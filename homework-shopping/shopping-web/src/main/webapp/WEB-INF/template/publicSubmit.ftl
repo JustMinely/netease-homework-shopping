@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<#include "/include/head.ftl">
+<#include "include/head.ftl">
 <body>
-<#include "/include/support.ftl">
-<#include "/include/header.ftl">
+<#include "include/support.ftl">
+<#include "include/header.ftl">
 <div class="g-doc">
     <#if product>
     <div class="n-result">
@@ -17,6 +17,5 @@
     </div>
     </#if>
 </div>
-<#include "/include/footer.ftl">
 </body>
 </html>

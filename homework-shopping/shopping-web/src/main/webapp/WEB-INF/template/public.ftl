@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<#include "/include/head.ftl">
+<#include "include/head.ftl">
 <body>
-<#include "/include/support.ftl">
-<#include "/include/header.ftl">
+<#include "include/support.ftl">
+<#include "include/header.ftl">
 <div class="g-doc">
     <div class="m-tab m-tab-fw m-tab-simple f-cb">
         <h2>内容发布</h2>
@@ -49,8 +49,8 @@
         <span class="imgpre"><img src="" alt="" id="imgpre"></span>
     </div>
 </div>
-<#include "/include/footer.ftl">
-<script type="text/javascript" src="/js/global.js"></script>
-<script type="text/javascript" src="/js/public.js"></script>
+
+<script type="text/javascript" src="../js/global.js"></script>
+<script type="text/javascript" src="../js/public.js"></script>
 </body>
 </html>

@@ -39,6 +39,6 @@
     </table>
     </#if>
 </div>
-<#include "include/footer.ftl">
+
 </body>
 </html>
