@@ -4,6 +4,7 @@ import com.springmvc.common.utils.GsonUtils;
 import com.springmvc.common.utils.HttpUtils;
 import com.springmvc.domain.po.Product;
 import com.springmvc.export.request.ProductReq;
+import com.springmvc.export.response.Result;
 import com.springmvc.service.ProductService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -59,14 +60,15 @@ public class ProductController {
         return new ModelAndView("index");
     }
 
-    @RequestMapping("addProduct")
+    @RequestMapping(value = "addProduct",produces = "application/json;charset=UTF-8")
     @ResponseBody
-    public void addProduct(HttpServletResponse response, @RequestBody ProductReq req) {
+    public Result addProduct(HttpServletResponse response, @RequestBody ProductReq req) {
         try {
-            HttpUtils.writeJson(response, productService.addProduct(req));
+            return productService.addProduct(req);
         } catch (Exception e) {
             LOGGER.error("addProduct writeJson fail...req={}", GsonUtils.toJSONString(req), e);
         }
+        return null;
     }
 
     @RequestMapping("deleteProduct")

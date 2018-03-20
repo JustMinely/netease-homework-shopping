@@ -227,7 +227,12 @@
             <artifactId>freemarker</artifactId>
             <version>2.3.23</version>
         </dependency>
-
+        <!-- 数据库连接池 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>0.2.9</version>
+        </dependency>
     </dependencies>
     <!--编译模式-->
     <build>

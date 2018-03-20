@@ -72,7 +72,7 @@
         <property name="cache" value="true" />
         <property name="prefix" value="" />
         <property name="viewClass" value="org.springframework.web.servlet.view.freemarker.FreeMarkerView" />
-        <property name="suffix" value=".html" />
+        <property name="suffix" value=".ftl" />
         <property name="contentType" value="text/html;charset=UTF-8"/>
         <property name="requestContextAttribute" value="request" />
         <property name="exposeSpringMacroHelpers" value="true" />
