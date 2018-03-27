@@ -4,6 +4,8 @@ import com.springmvc.common.utils.GsonUtils;
 import com.springmvc.common.utils.HttpUtils;
 import com.springmvc.domain.po.Product;
 import com.springmvc.export.request.ProductReq;
+import com.springmvc.export.response.CustomerResp;
+import com.springmvc.export.response.ProductResp;
 import com.springmvc.export.response.Result;
 import com.springmvc.service.ProductService;
 import org.slf4j.Logger;
@@ -12,6 +14,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -36,9 +39,14 @@ public class ProductController {
     public ModelAndView getAllProducts() {
         List<Product> result = new ArrayList<>();
         try {
+            CustomerResp customerResp = new CustomerResp();
+            customerResp.setCustomerName("buyer");
+
+
             result = productService.getAllProducts();
             ModelAndView modelAndView = new ModelAndView("index");
             modelAndView.addObject("productList", result);
+            modelAndView.addObject("user", customerResp);
             return modelAndView;
         } catch (Exception e) {
             LOGGER.error("getAllProducts...fail", GsonUtils.toJSONString(result), e);
@@ -50,9 +58,12 @@ public class ProductController {
     public ModelAndView getUnPurchasedProducts() {
         List<Product> result = new ArrayList<>();
         try {
+            CustomerResp customerResp = new CustomerResp();
+            customerResp.setCustomerName("buyer");
             result = productService.getAllUnPurchasedProducts();
             ModelAndView modelAndView = new ModelAndView("index");
-            modelAndView.addObject("UnpruchaseProducts", result);
+            modelAndView.addObject("productList", result);
+            modelAndView.addObject("user", customerResp);
             return modelAndView;
         } catch (Exception e) {
             LOGGER.error("getUnPurchasedProducts...fail", GsonUtils.toJSONString(result), e);
@@ -87,6 +98,27 @@ public class ProductController {
         model.addAttribute("test", "my name is freemarker");
         return "hello";
     }
+
+    @RequestMapping("show")
+    public ModelAndView getProductDetail(@RequestParam long id){
+        try{
+            ProductReq productReq = new ProductReq();
+            productReq.setId(id);
+            Result result = productService.getProductById(productReq);
+            ProductResp datas = (ProductResp) result.getDatas();
+            ModelAndView modelAndView = new ModelAndView("show");
+            modelAndView.addObject("product",datas);
+            CustomerResp customerResp = new CustomerResp();
+            customerResp.setCustomerName("buyer");
+            modelAndView.addObject("user",customerResp);
+            return modelAndView;
+        }catch (Exception e){
+            LOGGER.error("getProductDetail writeJson fail...id={}", GsonUtils.toJSONString(id), e);
+        }
+        return new ModelAndView("show");
+    }
+
+
 
 
 }

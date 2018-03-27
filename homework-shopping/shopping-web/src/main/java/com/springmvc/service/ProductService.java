@@ -18,6 +18,10 @@ public interface ProductService {
 
     Result deleteUnPurcharseProduct(ProductReq req);
 
+    Result getProductById(ProductReq req);
+
+    Result purchaseProduct(ProductReq req);
+
 
 
 }

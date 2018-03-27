@@ -15,24 +15,27 @@
           class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="location" value="classpath:jdbc.properties"/>
     </bean>
-    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
-          destroy-method="close">
+
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
         <property name="driverClassName" value="${jdbc.driverClass}"/>
         <property name="url" value="${shop.jdbc.url}"/>
         <property name="username" value="${shop.jdbc.username}"/>
         <property name="password" value="${shop.jdbc.password}"/>
-        <!-- 初始化连接大小 -->
-        <property name="initialSize" value="${shop.jdbc.initialSize}"/>
-        <!-- 连接池最大数量 -->
-        <property name="maxActive" value="${shop.jdbc.maxActive}"/>
-        <!-- 连接池最大空闲 -->
-        <property name="maxIdle" value="${shop.jdbc.maxIdle}"/>
-        <!-- 连接池最小空闲 -->
-        <property name="minIdle" value="${shop.jdbc.minIdle}"/>
-        <!-- 获取连接最大等待时间 -->
-        <property name="maxWait" value="${shop.jdbc.maxWait}"/>
-    </bean>
+        <property name="filters" value="stat" />
+        <property name="maxActive" value="20" />
+        <property name="initialSize" value="1" />
+        <property name="maxWait" value="60000" />
+        <property name="minIdle" value="1" />
+        <property name="timeBetweenEvictionRunsMillis" value="60000" />
+        <property name="minEvictableIdleTimeMillis" value="300000" />
+        <property name="validationQuery" value="SELECT 'x'" />
+        <property name="testWhileIdle" value="true" />
+        <property name="testOnBorrow" value="false" />
+        <property name="testOnReturn" value="false" />
+        <property name="poolPreparedStatements" value="true" />
+        <property name="maxPoolPreparedStatementPerConnectionSize" value="50" />
 
+    </bean>
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"/>
     </bean>

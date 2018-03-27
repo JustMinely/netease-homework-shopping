@@ -2,7 +2,11 @@
     <div class="g-doc f-cb">
         <div class="user">
         <#if user>
-            <#if user.usertype==1>卖家<#else>买家</#if>你好，<span class="name">${user.username}</span>！<a href="/logout">[退出]</a>
+            <#if user.usertype==1>
+                卖家你好，<span class="name">${user.merchantName}</span>！<a href="/logout">[退出]</a>
+            <#else>
+                买家你好,<span class="name">${user.consumerName}</span>！<a href="/logout">[退出]</a>
+            </#if>你好，
         <#else>
             请<a href="/login">[登录]</a>
         </#if>

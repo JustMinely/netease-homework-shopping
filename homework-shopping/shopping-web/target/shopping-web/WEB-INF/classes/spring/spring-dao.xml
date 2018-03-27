@@ -7,23 +7,11 @@
         <property name="dataSource" ref="dataSource"/>
         <property name="configLocation" value="classpath:/mybatis-config.xml"/>
     </bean>
-    <bean id="abstractMapper" abstract="true" class="org.mybatis.spring.mapper.MapperFactoryBean">
-        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    <!--直接扫描dao下面的包，减少bean的配置-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.springmvc.dao" />
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
-    <bean id="customerMapper" parent="abstractMapper">
-        <property name="mapperInterface" value="com.springmvc.dao.CustomerMapper"/>
-    </bean>
-    <bean id="productMapper" parent="abstractMapper">
-        <property name="mapperInterface" value="com.springmvc.dao.ProductMapper"/>
-    </bean>
-    <bean id="flowLogMapper" parent="abstractMapper">
-        <property name="mapperInterface" value="com.springmvc.dao.FlowLogMapper"/>
-    </bean>
-    <bean id="publishMapper" parent="abstractMapper">
-        <property name="mapperInterface" value="com.springmvc.dao.PublishMapper"/>
-    </bean>
-    <bean id="shopCartMapper" parent="abstractMapper">
-        <property name="mapperInterface" value="com.springmvc.dao.ShopCartMapper"/>
-    </bean>
+
 
 </beans>

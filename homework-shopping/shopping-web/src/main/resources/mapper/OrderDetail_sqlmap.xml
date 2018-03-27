@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springmvc.dao.OrderDetailMapper">
+    <select id="getOrderDetailsByOrderId" parameterType="com.springmvc.export.request.OrderDetailReq"
+            resultType="com.springmvc.export.response.OrderDetailResp">
+        SELECT * FROM `order_detail` WHERE `order_id` = #{orderId};
+    </select>
+
+    <delete id="deleteOrderDetailsByOrderId" parameterType="com.springmvc.export.request.OrderDetailReq">
+        DELETE FROM `order_detail` WHERE order_id = #{orderId};
+    </delete>
+
+    <insert id="addOrderDetail" parameterType="com.springmvc.export.request.OrderDetailReq" keyProperty="id"
+            useGeneratedKeys="true">
+        INSERT INTO order_detail(order_id,product_id,product_num,product_name,product_price,product_url,product_amount)
+                    VALUES (#{orderId},#{productId},#{productNum},#{productName},#{productPrice},#{productUrl},#{productAmount})
+    </insert>
+</mapper>

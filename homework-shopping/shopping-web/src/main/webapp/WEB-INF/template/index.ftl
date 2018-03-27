@@ -9,9 +9,9 @@
     <div class="m-tab m-tab-fw m-tab-simple f-cb">
         <div class="tab">
             <ul>
-                <li <#if !listType || listType != 1>class="z-sel"</#if>><a href="/">所有内容</a></li>
+                <li <#if !listType || listType != 1>class="z-sel"</#if>><a href="/product/getAllProducts">所有内容</a></li>
             <#if user && user.usertype == 0>
-                <li <#if listType == 1>class="z-sel"</#if>><a href="/?type=1">未购买的内容</a></li></#if>
+                <li <#if listType == 1>class="z-sel"</#if>><a href="/product/getUnPurchasedProducts">未购买的内容</a></li></#if>
             </ul>
         </div>
     </div>
@@ -24,11 +24,11 @@
         <ul class="f-cb" id="plist">
             <#if user && user.usertype == 0 && listType == 1>
                 <#list productList as x>
-                    <#if !x.isBuy>
+                    <#if x.productStatus == 0>
                         <li id="p-${x.id}">
-                            <a href="/show?id=${x.id}" class="link">
-                                <div class="img"><img src="${x.image}" alt="${x.title}"></div>
-                                <h3>${x.title}</h3>
+                            <a href="/product/show?id=${x.id}" class="link">
+                                <div class="img"><img src="${x.productUrl}" alt="${x.productName}"></div>
+                                <h3>${x.productName}</h3>
                                 <div class="price"><span class="v-unit">¥</span><span class="v-value">${x.price}</span>
                                 </div>
                             </a>
@@ -38,15 +38,15 @@
             <#else>
                 <#list productList as x>
                     <li id="p-${x.id}">
-                        <a href="/show?id=${x.id}" class="link">
-                            <div class="img"><img src="${x.image}" alt="${x.title}"></div>
-                            <h3>${x.title}</h3>
-                            <div class="price"><span class="v-unit">¥</span><span class="v-value">${x.price}</span>
+                        <a href="/product/show?id=${x.id}" class="link">
+                            <div class="img"><img src="${x.productUrl}" alt="${x.productName}"></div>
+                            <h3>${x.productName}</h3>
+                            <div class="price"><span class="v-unit">¥</span><span class="v-value">${x.productPrice}</span>
                             </div>
-                            <#if user && user.usertype==0 && x.isBuy><span class="had"><b>已购买</b></span></#if>
-                            <#if user && user.usertype==1 && x.isSell><span class="had"><b>已售出</b></span></#if>
+                            <#if user && user.usertype==0 && x.productStatus == 1><span class="had"><b>已购买</b></span></#if>
+                            <#if user && user.usertype==1 && x.productStatus == 1><span class="had"><b>已售出</b></span></#if>
                         </a>
-                        <#if user && user.usertype==1 && !x.isSell><span class="u-btn u-btn-normal u-btn-xs del"
+                        <#if user && user.usertype==1 && x.productStatus == 0><span class="u-btn u-btn-normal u-btn-xs del"
                                                                          data-del="${x.id}">删除</span></#if>
                     </li>
                 </#list>
@@ -55,7 +55,7 @@
     </div>
 </#if>
 </div>
-<script type="text/javascript" src="../js/global.js"></script>
-<script type="text/javascript" src="../js/pageIndex.js"></script>
+<script type="text/javascript" src="/js/global.js"></script>
+<script type="text/javascript" src="/js/pageIndex.js"></script>
 </body>
 </html>

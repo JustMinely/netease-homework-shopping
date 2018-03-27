@@ -28,4 +28,11 @@
             #{productId}
         </foreach>
     </select>
+    <select id="getProductById" parameterType="java.lang.Long" resultType="com.springmvc.export.response.ProductResp">
+        SELECT * FROM product WHERE id = #{id};
+    </select>
+
+    <update id="updateProductInfo" parameterType="com.springmvc.export.request.ProductReq">
+        UPDATE product SET product_status = #{productStatus} WHERE id = #{id};
+    </update>
 </mapper>

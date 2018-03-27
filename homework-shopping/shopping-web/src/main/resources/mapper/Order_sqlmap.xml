@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springmvc.dao.OrderMapper">
+    <insert id="addOrder" parameterType="com.springmvc.export.request.OrderReq" useGeneratedKeys="true"
+            keyProperty="id">
+        INSERT INTO `order`(customer_id,total_amount) VALUES(#{consumerId},#{totalAmount});
+    </insert>
+
+    <select id="findOrdersByConsumerId" parameterType="com.springmvc.export.request.OrderReq"
+            resultType="com.springmvc.export.response.OrderResp">
+        SELECT * FROM `order` WHERE customer_id = #{consumerId};
+    </select>
+
+    <delete id="deleteOrderById" parameterType="com.springmvc.export.request.OrderReq">
+        DELETE FROM `order` WHERE id = #{id};
+    </delete>
+</mapper>

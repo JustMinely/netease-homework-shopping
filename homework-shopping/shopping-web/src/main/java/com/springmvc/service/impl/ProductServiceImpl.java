@@ -2,13 +2,13 @@ package com.springmvc.service.impl;
 
 import com.springmvc.common.Constant;
 import com.springmvc.common.utils.GsonUtils;
-import com.springmvc.dao.FlowLogMapper;
-import com.springmvc.dao.ProductMapper;
-import com.springmvc.dao.PublishMapper;
+import com.springmvc.dao.*;
 import com.springmvc.domain.enums.OperationEnum;
 import com.springmvc.domain.enums.ProductEnum;
 import com.springmvc.domain.po.FlowLog;
 import com.springmvc.domain.po.Product;
+import com.springmvc.export.request.OrderDetailReq;
+import com.springmvc.export.request.OrderReq;
 import com.springmvc.export.request.ProductReq;
 import com.springmvc.export.request.PublishReq;
 import com.springmvc.export.response.ProductResp;
@@ -38,7 +38,10 @@ public class ProductServiceImpl extends BaseService implements ProductService {
     private FlowLogMapper flowLogMapper;
     @Resource(name = "transactionManager")
     private PlatformTransactionManager transactionManager;
-
+    @Resource(name = "orderMapper")
+    private OrderMapper orderMapper;
+    @Resource(name = "orderDetailMapper")
+    private OrderDetailMapper orderDetailMapper;
 
     @Resource(name = "publishMapper")
     private PublishMapper publishMapper;
@@ -156,6 +159,81 @@ public class ProductServiceImpl extends BaseService implements ProductService {
         return new Result(false, ResultCode.FAILURE.value(), "操作失败");
     }
 
+    @Override
+    public Result getProductById(ProductReq req) {
+        LOGGER.info("getProductById req={}", GsonUtils.toJSONString(req));
+        try {
+            if (req == null || req.getId() < 0) {
+                return new Result(false, ResultCode.PARAMERROR.value(), "参数错误");
+            }
+            Long id = req.getId();
+            ProductResp productResp = productMapper.findProductById(id);
+            if (productResp == null) {
+                return new Result(false, ResultCode.NOTEXIST.value(), "商品不存在");
+            }
+            return new Result<>(true, ResultCode.SUCCESS.value(), "成功", productResp);
+        } catch (Exception e) {
+            LOGGER.error("getProductById fail...productReq is {}", GsonUtils.toJSONString(req), e);
+        }
+        return new Result(false, ResultCode.FAILURE.value(), "操作失败");
+    }
+
+    @Override
+    public Result purchaseProduct(ProductReq req) {
+        LOGGER.info("purchaseProduct...start");
+        if (!checkParam4Purchase(req)) {
+            return new Result(false, ResultCode.PARAMERROR.value(), "参数错误");
+        }
+        TransactionStatus status = null;
+        try {
+            Long productId = req.getId();
+            Long productNum = req.getProductNum();
+            ProductResp productResp = productMapper.findProductById(productId);
+            if (productResp == null) {
+                throw new Exception("can not find product by id, productId is {}" + productId);
+            }
+            //开启事务
+            status = transactionManager.getTransaction(define());
+            //插入order记录
+            String totalAmount = String.valueOf(Long.parseLong(productResp.getProductPrice()) * productNum);
+            OrderReq orderReq = new OrderReq();
+            orderReq.setConsumerId(1L);
+            orderReq.setTotalAmount(totalAmount);
+            int insertRow = orderMapper.addOrder(orderReq);
+            if (insertRow <= 0) {
+                throw new Exception("insert order fail...");
+            }
+            Long orderReqId = orderReq.getId();
+            //插入order_detail记录
+            OrderDetailReq orderDetailReq = new OrderDetailReq();
+            orderDetailReq.setOrderId(orderReqId);
+            orderDetailReq.setProductId(productId);
+            orderDetailReq.setProductName(productResp.getProductName());
+            orderDetailReq.setProductPrice(productResp.getProductPrice());
+            orderDetailReq.setProductUrl(productResp.getProductUrl());
+            orderDetailReq.setProductNum(productNum.toString());
+            orderDetailReq.setProductAmount("1");
+            int addRow4detail = orderDetailMapper.addOrderDetail(orderDetailReq);
+            if (addRow4detail <= 0) {
+                throw new Exception("add order detail fail...req is {}" + GsonUtils.toJSONString(orderDetailReq));
+            }
+            //修改商品状态
+            req.setProductStatus(ProductEnum.Purchased.value());
+            int updateRow4Product = productMapper.updateProductInfo(req);
+            if (updateRow4Product <= 0) {
+                throw new Exception("updateProductInfo fail req is {}" + GsonUtils.toJSONString(req));
+            }
+            transactionManager.commit(status);
+            return new Result(true, ResultCode.SUCCESS.value(), "操作成功");
+        } catch (Exception e) {
+            if (status != null) {
+                transactionManager.rollback(status);
+            }
+            LOGGER.error("purchaseProduct...fail,req is {}", GsonUtils.toJSONString(req), e);
+        }
+        return new Result(false, ResultCode.FAILURE.value(), "操作失败");
+    }
+
     private boolean checkParam4Delete(ProductReq req) {
         if (req == null) {
             return false;
@@ -190,6 +268,18 @@ public class ProductServiceImpl extends BaseService implements ProductService {
         return true;
     }
 
+    private Boolean checkParam4Purchase(ProductReq req) {
+        if (req == null) {
+            return false;
+        }
+        Long id = req.getId();
+        Long productNum = req.getProductNum();
+        if (id <= 0 || productNum < 0) {
+            return false;
+        }
+        return true;
+    }
+
 
     public ProductMapper getProductMapper() {
         return productMapper;
@@ -213,6 +303,22 @@ public class ProductServiceImpl extends BaseService implements ProductService {
 
     public void setTransactionManager(PlatformTransactionManager transactionManager) {
         this.transactionManager = transactionManager;
+    }
+
+    public OrderMapper getOrderMapper() {
+        return orderMapper;
+    }
+
+    public void setOrderMapper(OrderMapper orderMapper) {
+        this.orderMapper = orderMapper;
+    }
+
+    public OrderDetailMapper getOrderDetailMapper() {
+        return orderDetailMapper;
+    }
+
+    public void setOrderDetailMapper(OrderDetailMapper orderDetailMapper) {
+        this.orderDetailMapper = orderDetailMapper;
     }
 
     public PublishMapper getPublishMapper() {

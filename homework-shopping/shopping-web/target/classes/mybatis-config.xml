@@ -12,5 +12,7 @@
         <mapper resource="mapper/Product_sqlmap.xml"/>
         <mapper resource="mapper/Publish_sqlmap.xml"/>
         <mapper resource="mapper/ShopCart_sqlmap.xml"/>
+        <mapper resource="mapper/Order_sqlmap.xml"/>
+        <mapper resource="mapper/OrderDetail_sqlmap.xml"/>
     </mappers>
 </configuration>

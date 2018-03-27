@@ -18,8 +18,9 @@
 							loading.show();
 							ajax({
 								data:{id:buy},
-								url:'/api/buy',
+								url:'/product/buy',
 								success:function(result){
+									if(result.code == 10001)
 									loading.result('购买成功',function(){location.href = './account.html';});
 								},
 								error:function(message){

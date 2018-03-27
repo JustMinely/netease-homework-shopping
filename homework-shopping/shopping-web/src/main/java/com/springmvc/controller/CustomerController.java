@@ -1,9 +1,11 @@
 package com.springmvc.controller;
 
 import com.springmvc.domain.po.Customer;
+import com.springmvc.export.response.CustomerResp;
 import com.springmvc.service.CustomerService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -34,6 +36,16 @@ public class CustomerController {
     @RequestMapping("/login")
     public String login() {
         return "login";
+    }
+
+    @RequestMapping("/loginAction")
+    public ModelAndView loginAction(@ModelAttribute("form") CustomerResp resp){
+        String customerName = resp.getCustomerName();
+        ModelAndView modelAndView = new ModelAndView("index");
+        if (customerName.trim().equals("buyer")){
+            return modelAndView;
+        }
+        return null;
     }
 
 }

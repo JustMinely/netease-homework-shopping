@@ -57,6 +57,14 @@ public class ProductServiceTest extends SpringTestUnit {
         LOGGER.info("removeProduct...result is {}", GsonUtils.toJSONString(result));
 
     }
+    @Test
+    public void purchaseProductTest(){
+        ProductReq req = new ProductReq();
+        req.setId(3L);
+        req.setProductNum(1L);
+        Result result = productService.purchaseProduct(req);
+        LOGGER.info("purchaseProductTest..result is \n{}",GsonUtils.toJSONString(result));
+    }
 
 
 }
