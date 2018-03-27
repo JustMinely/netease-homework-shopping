@@ -7,6 +7,7 @@ import com.springmvc.export.request.ProductReq;
 import com.springmvc.export.response.CustomerResp;
 import com.springmvc.export.response.ProductResp;
 import com.springmvc.export.response.Result;
+import com.springmvc.export.response.ResultCode;
 import com.springmvc.service.ProductService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -71,7 +72,7 @@ public class ProductController {
         return new ModelAndView("index");
     }
 
-    @RequestMapping(value = "addProduct",produces = "application/json;charset=UTF-8")
+    @RequestMapping(value = "addProduct", produces = "application/json;charset=UTF-8")
     @ResponseBody
     public Result addProduct(HttpServletResponse response, @RequestBody ProductReq req) {
         try {
@@ -87,8 +88,8 @@ public class ProductController {
     public void deleteProduct(HttpServletResponse response, @RequestBody ProductReq req) {
         //TODO
         try {
-            HttpUtils.writeJson(response,productService.deleteUnPurcharseProduct(req));
-        }catch (Exception e){
+            HttpUtils.writeJson(response, productService.deleteUnPurcharseProduct(req));
+        } catch (Exception e) {
             LOGGER.error("deleteProduct writeJson fail...req={}", GsonUtils.toJSONString(req), e);
         }
     }
@@ -100,25 +101,37 @@ public class ProductController {
     }
 
     @RequestMapping("show")
-    public ModelAndView getProductDetail(@RequestParam long id){
-        try{
+    public ModelAndView getProductDetail(@RequestParam long id) {
+        try {
             ProductReq productReq = new ProductReq();
             productReq.setId(id);
             Result result = productService.getProductById(productReq);
             ProductResp datas = (ProductResp) result.getDatas();
             ModelAndView modelAndView = new ModelAndView("show");
-            modelAndView.addObject("product",datas);
+            modelAndView.addObject("product", datas);
             CustomerResp customerResp = new CustomerResp();
             customerResp.setCustomerName("buyer");
-            modelAndView.addObject("user",customerResp);
+            modelAndView.addObject("user", customerResp);
             return modelAndView;
-        }catch (Exception e){
+        } catch (Exception e) {
             LOGGER.error("getProductDetail writeJson fail...id={}", GsonUtils.toJSONString(id), e);
         }
         return new ModelAndView("show");
     }
 
-
+    @RequestMapping(value = "buy", produces = "application/json;charset=UTF-8")
+    @ResponseBody
+    public Result purchaseProduct(@RequestParam long id) {
+        try {
+            ProductReq productReq = new ProductReq();
+            productReq.setId(id);
+            productReq.setProductNum(1L);
+            return productService.purchaseProduct(productReq);
+        } catch (Exception e) {
+            LOGGER.error("purchaseProduct writeJson fail...id={}", GsonUtils.toJSONString(id), e);
+        }
+        return new Result(false, ResultCode.FAILURE.value(), "操作失败");
+    }
 
 
 }

@@ -2,85 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2702a9dd-715f-4504-8630-e896dae4dad2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/dao/OrderDetailMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/dao/OrderMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/domain/po/Merchant.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/domain/po/Order.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/domain/po/OrderDetail.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/export/request/OrderDetailReq.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/export/request/OrderReq.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/export/response/CustomerResp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/export/response/MerchantResp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/export/response/OrderDetailResp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/export/response/OrderResp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shopping-web/src/main/resources/mapper/OrderDetail_sqlmap.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shopping-web/src/main/resources/mapper/Order_sqlmap.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/js/global.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/js/md5.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/js/pageIndex.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/js/pageLogin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/js/pageShow.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/js/public.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/classes/com/springmvc/controller/CustomerController.class" afterPath="$PROJECT_DIR$/shopping-web/target/classes/com/springmvc/controller/CustomerController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/classes/com/springmvc/controller/ProductController.class" afterPath="$PROJECT_DIR$/shopping-web/target/classes/com/springmvc/controller/ProductController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/classes/com/springmvc/dao/CustomerMapper.class" afterPath="$PROJECT_DIR$/shopping-web/target/classes/com/springmvc/dao/CustomerMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/classes/com/springmvc/dao/FlowLogMapper.class" afterPath="$PROJECT_DIR$/shopping-web/target/classes/com/springmvc/dao/FlowLogMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/classes/com/springmvc/dao/ProductMapper.class" afterPath="$PROJECT_DIR$/shopping-web/target/classes/com/springmvc/dao/ProductMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/classes/com/springmvc/dao/PublishMapper.class" afterPath="$PROJECT_DIR$/shopping-web/target/classes/com/springmvc/dao/PublishMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/classes/com/springmvc/dao/ShopCartMapper.class" afterPath="$PROJECT_DIR$/shopping-web/target/classes/com/springmvc/dao/ShopCartMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/classes/com/springmvc/export/request/ProductReq.class" afterPath="$PROJECT_DIR$/shopping-web/target/classes/com/springmvc/export/request/ProductReq.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/classes/com/springmvc/service/ProductService.class" afterPath="$PROJECT_DIR$/shopping-web/target/classes/com/springmvc/service/ProductService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/classes/com/springmvc/service/impl/ProductServiceImpl.class" afterPath="$PROJECT_DIR$/shopping-web/target/classes/com/springmvc/service/impl/ProductServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/classes/com/springmvc/service/impl/ShopCartServiceImpl.class" afterPath="$PROJECT_DIR$/shopping-web/target/classes/com/springmvc/service/impl/ShopCartServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/classes/com/springmvc/controller/CustomerController.class" afterPath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/classes/com/springmvc/controller/CustomerController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/classes/com/springmvc/dao/CustomerMapper.class" afterPath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/classes/com/springmvc/dao/CustomerMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/test-classes/ProductServiceTest.class" afterPath="$PROJECT_DIR$/shopping-web/target/test-classes/ProductServiceTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/qudi.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/qudi.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/controller/CustomerController.java" afterPath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/controller/CustomerController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/controller/ProductController.java" afterPath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/controller/ProductController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/dao/CustomerMapper.java" afterPath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/dao/CustomerMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/dao/FlowLogMapper.java" afterPath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/dao/FlowLogMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/dao/ProductMapper.java" afterPath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/dao/ProductMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/dao/PublishMapper.java" afterPath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/dao/PublishMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/dao/ShopCartMapper.java" afterPath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/dao/ShopCartMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/export/request/ProductReq.java" afterPath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/export/request/ProductReq.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/service/ProductService.java" afterPath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/service/ProductService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/service/impl/ProductServiceImpl.java" afterPath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/service/impl/ProductServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/resources/mapper/Product_sqlmap.xml" afterPath="$PROJECT_DIR$/shopping-web/src/main/resources/mapper/Product_sqlmap.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/resources/mybatis-config.xml" afterPath="$PROJECT_DIR$/shopping-web/src/main/resources/mybatis-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/resources/spring.xml" afterPath="$PROJECT_DIR$/shopping-web/src/main/resources/spring.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/resources/spring/spring-mvc.xml" afterPath="$PROJECT_DIR$/shopping-web/src/main/resources/spring/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/resources/spring/spring-service.xml" afterPath="$PROJECT_DIR$/shopping-web/src/main/resources/spring/spring-service.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/include/head.ftl" afterPath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/include/head.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/include/header.ftl" afterPath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/include/header.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/index.ftl" afterPath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/index.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/login.ftl" afterPath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/login.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/show.ftl" afterPath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/show.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/test/java/ProductServiceTest.java" afterPath="$PROJECT_DIR$/shopping-web/src/test/java/ProductServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/classes/jdbc.properties" afterPath="$PROJECT_DIR$/shopping-web/target/classes/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/classes/mapper/Product_sqlmap.xml" afterPath="$PROJECT_DIR$/shopping-web/target/classes/mapper/Product_sqlmap.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/classes/mybatis-config.xml" afterPath="$PROJECT_DIR$/shopping-web/target/classes/mybatis-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/classes/spring.xml" afterPath="$PROJECT_DIR$/shopping-web/target/classes/spring.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/classes/spring/spring-dao.xml" afterPath="$PROJECT_DIR$/shopping-web/target/classes/spring/spring-dao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/classes/spring/spring-mvc.xml" afterPath="$PROJECT_DIR$/shopping-web/target/classes/spring/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/classes/spring/spring-mybatis.xml" afterPath="$PROJECT_DIR$/shopping-web/target/classes/spring/spring-mybatis.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/classes/spring/spring-service.xml" afterPath="$PROJECT_DIR$/shopping-web/target/classes/spring/spring-service.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/classes/jdbc.properties" afterPath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/classes/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/classes/spring.xml" afterPath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/classes/spring.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/classes/spring/spring-dao.xml" afterPath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/classes/spring/spring-dao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/classes/spring/spring-mvc.xml" afterPath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/classes/spring/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/classes/spring/spring-mybatis.xml" afterPath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/classes/spring/spring-mybatis.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/web.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/css/style.css" afterPath="$PROJECT_DIR$/shopping-web/src/main/webapp/css/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/js/global.js" afterPath="$PROJECT_DIR$/shopping-web/src/main/webapp/js/global.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/js/md5.js" afterPath="$PROJECT_DIR$/shopping-web/src/main/webapp/js/md5.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/js/pageIndex.js" afterPath="$PROJECT_DIR$/shopping-web/src/main/webapp/js/pageIndex.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/js/pageLogin.js" afterPath="$PROJECT_DIR$/shopping-web/src/main/webapp/js/pageLogin.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/js/pageShow.js" afterPath="$PROJECT_DIR$/shopping-web/src/main/webapp/js/pageShow.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/js/public.js" afterPath="$PROJECT_DIR$/shopping-web/src/main/webapp/js/public.js" />
     </list>
     <ignored path="homework-shopping.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -105,6 +28,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/controller/ProductController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4856115">
+              <caret line="130" column="41" selection-start-line="130" selection-start-column="41" selection-end-line="130" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.ftl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/show.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.935484">
+              <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pageShow.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/js/pageShow.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="60" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ProductServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/service/impl/ProductServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -158,71 +111,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductServiceTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProductServiceTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shopping-web/src/test/java/ProductServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.76258993">
-              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShopCart_sqlmap.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shopping-web/src/main/resources/mapper/ShopCart_sqlmap.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="5.774194">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1520253564589" expanded="true" signature="358:475" placeholder="INSERT INTO shop_cart... " />
-                <marker date="1520253564589" expanded="true" signature="600:685" placeholder="DELETE FROM " />
-                <marker date="1520253564589" expanded="true" signature="877:934" placeholder="SELECT * FRO... shop_cart" />
-                <marker date="1520253564589" expanded="true" signature="1149:1236" placeholder="SELECT * FRO... shop_cart" />
-                <marker date="1520253564589" expanded="true" signature="1372:1502" placeholder="UPDATE shop_... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderDetail.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/domain/po/OrderDetail.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="51" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="51" />
-              <folding>
-                <element signature="e#676#677#0" expanded="true" />
-                <element signature="e#701#702#0" expanded="true" />
-                <element signature="e#735#736#0" expanded="true" />
-                <element signature="e#763#764#0" expanded="true" />
-                <element signature="e#795#796#0" expanded="true" />
-                <element signature="e#825#826#0" expanded="true" />
-                <element signature="e#869#870#0" expanded="true" />
-                <element signature="e#907#908#0" expanded="true" />
-                <element signature="e#944#945#0" expanded="true" />
-                <element signature="e#977#978#0" expanded="true" />
-                <element signature="e#1029#1030#0" expanded="true" />
-                <element signature="e#1073#1074#0" expanded="true" />
-                <element signature="e#1111#1112#0" expanded="true" />
-                <element signature="e#1145#1146#0" expanded="true" />
-                <element signature="e#1199#1200#0" expanded="true" />
-                <element signature="e#1245#1246#0" expanded="true" />
-                <element signature="e#1284#1285#0" expanded="true" />
-                <element signature="e#1319#1320#0" expanded="true" />
-                <element signature="e#1375#1376#0" expanded="true" />
-                <element signature="e#1423#1424#0" expanded="true" />
-                <element signature="e#1460#1461#0" expanded="true" />
-                <element signature="e#1493#1494#0" expanded="true" />
-                <element signature="e#1545#1546#0" expanded="true" />
-                <element signature="e#1589#1590#0" expanded="true" />
-                <element signature="e#1629#1630#0" expanded="true" />
-                <element signature="e#1665#1666#0" expanded="true" />
-                <element signature="e#1723#1724#0" expanded="true" />
-                <element signature="e#1773#1774#0" expanded="true" />
-                <element signature="e#1807#1808#0" expanded="true" />
-                <element signature="e#1839#1840#0" expanded="true" />
-                <element signature="e#1887#1888#0" expanded="true" />
-                <element signature="e#1929#1930#0" expanded="true" />
-              </folding>
+              <caret line="63" column="30" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -307,7 +201,6 @@
         <option value="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/dao/ShopCartMapper.java" />
         <option value="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/index.ftl" />
         <option value="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/show.ftl" />
-        <option value="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/controller/ProductController.java" />
         <option value="$PROJECT_DIR$/shopping-web/src/main/webapp/js/pageShow.js" />
         <option value="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/service/ProductService.java" />
         <option value="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/include/header.ftl" />
@@ -328,6 +221,7 @@
         <option value="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/service/impl/ProductServiceImpl.java" />
         <option value="$PROJECT_DIR$/shopping-web/src/main/resources/mapper/OrderDetail_sqlmap.xml" />
         <option value="$PROJECT_DIR$/shopping-web/src/main/resources/mybatis-config.xml" />
+        <option value="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/controller/ProductController.java" />
       </list>
     </option>
   </component>
@@ -557,6 +451,104 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homework-shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homework-shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopping-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homework-shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homework-shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopping-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homework-shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homework-shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopping-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -821,6 +813,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homework-shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homework-shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopping-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springmvc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1296,7 +1322,7 @@
       <workItem from="1519178264459" duration="8199000" />
       <workItem from="1519458190814" duration="39007000" />
       <workItem from="1521449086749" duration="22286000" />
-      <workItem from="1522065033295" duration="20691000" />
+      <workItem from="1522065033295" duration="21215000" />
     </task>
     <task id="LOCAL-00001" summary="整合freemarker 添加ftl模板">
       <created>1521449797863</created>
@@ -1322,7 +1348,13 @@
       <option name="project" value="LOCAL" />
       <updated>1521549855696</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="实现 orderMapper , orderDetailMapper&#10;实现 购买 purchaseProduct接口 单测通过&#10;调整部分ftl页面">
+      <created>1522148797524</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1522148797524</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1358,7 +1390,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92070000" />
+    <option name="totallyTimeSpent" value="92594000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1442,7 +1474,8 @@
     <MESSAGE value="整合freemarker 添加ftl模板" />
     <MESSAGE value="添ftl以及html &#10;编写freemarker 测试类 位于productController中" />
     <MESSAGE value="mapper bean改为扫描包&#10;修改jdbc数据库连接池为druid&#10;调整controller 接口返回类型，统一为Result，转成json格式，(addProduct为例)" />
-    <option name="LAST_COMMIT_MESSAGE" value="mapper bean改为扫描包&#10;修改jdbc数据库连接池为druid&#10;调整controller 接口返回类型，统一为Result，转成json格式，(addProduct为例)" />
+    <MESSAGE value="实现 orderMapper , orderDetailMapper&#10;实现 购买 purchaseProduct接口 单测通过&#10;调整部分ftl页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现 orderMapper , orderDetailMapper&#10;实现 购买 purchaseProduct接口 单测通过&#10;调整部分ftl页面" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1645,14 +1678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/js/pageShow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.857143">
-          <caret line="22" column="60" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/export/response/ShopCartResp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.039568346">
@@ -1661,26 +1686,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/show.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49714285">
-          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/index.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-34.258064">
           <caret line="56" column="6" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/controller/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="28" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -1764,7 +1773,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1974,8 +1983,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shopping-web/src/test/java/ProductServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76258993">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="30" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/show.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.935484">
+          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/js/pageShow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="60" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/controller/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4856115">
+          <caret line="130" column="41" selection-start-line="130" selection-start-column="41" selection-end-line="130" selection-end-column="41" />
           <folding />
         </state>
       </provider>
