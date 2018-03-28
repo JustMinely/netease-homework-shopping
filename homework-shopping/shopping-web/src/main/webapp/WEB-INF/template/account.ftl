@@ -21,10 +21,10 @@
         </thead>
         <tbody>
             <#list buyList as x>
-            <#assign total = total + x.productPrice>
+            <#assign total = total + x.productPrice * x.productNum>
             <tr>
-                <td><a href="/show?id=${x.id}"><img src="${x.productUrl}" alt=""></a></td>
-                <td><h4><a href="/show?id=${x.id}">${x.productName}</a></h4></td>
+                <td><a href="/product/show?id=${x.id}"><img src="${x.productUrl}" alt=""></a></td>
+                <td><h4><a href="/product/show?id=${x.id}">${x.productName}</a></h4></td>
                 <td><span class="v-time">${x.buyTime?number_to_datetime?string("yyyy-MM-dd HH:mm")}</span></td>
                 <td><span class="v-unit">¥</span><span class="value">${x.productPrice}</span></td>
             </tr>

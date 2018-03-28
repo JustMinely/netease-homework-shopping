@@ -2,6 +2,7 @@ package com.springmvc.dao;
 
 import com.springmvc.export.request.OrderDetailReq;
 import com.springmvc.export.response.OrderDetailResp;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -12,7 +13,7 @@ import java.util.List;
  */
 @Component
 public interface OrderDetailMapper {
-    List<OrderDetailResp> getOrderDetailsByOrderId(OrderDetailReq req) throws Exception;
+    List<OrderDetailResp> getOrderDetailsByOrderId(@Param("orderIds") List<Long> orderIds) throws Exception;
 
     int deleteOrderDetailsByOrderId(OrderDetailReq req) throws Exception;
 

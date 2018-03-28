@@ -2,23 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2702a9dd-715f-4504-8630-e896dae4dad2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/service/OrderService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/service/impl/OrderServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/classes/com/springmvc/controller/CustomerController.class" afterPath="$PROJECT_DIR$/shopping-web/target/classes/com/springmvc/controller/CustomerController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/classes/com/springmvc/controller/ProductController.class" afterPath="$PROJECT_DIR$/shopping-web/target/classes/com/springmvc/controller/ProductController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/classes/com/springmvc/controller/CustomerController.class" afterPath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/classes/com/springmvc/controller/CustomerController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/controller/CustomerController.java" afterPath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/controller/CustomerController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/controller/ProductController.java" afterPath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/controller/ProductController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/dao/OrderDetailMapper.java" afterPath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/dao/OrderDetailMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/export/response/OrderDetailResp.java" afterPath="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/export/response/OrderDetailResp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/resources/mapper/OrderDetail_sqlmap.xml" afterPath="$PROJECT_DIR$/shopping-web/src/main/resources/mapper/OrderDetail_sqlmap.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/resources/spring/spring-service.xml" afterPath="$PROJECT_DIR$/shopping-web/src/main/resources/spring/spring-service.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/account.ftl" afterPath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/account.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/edit.ftl" afterPath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/edit.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/editSubmit.ftl" afterPath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/editSubmit.ftl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/include/header.ftl" afterPath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/include/header.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/index.ftl" afterPath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/index.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/login.ftl" afterPath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/login.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/webapp/js/pageLogin.js" afterPath="$PROJECT_DIR$/shopping-web/src/main/webapp/js/pageLogin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/classes/mybatis-config.xml" afterPath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/classes/mybatis-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/classes/spring/spring-service.xml" afterPath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/classes/spring/spring-service.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/shopping-web/target/shopping-web/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/public.ftl" afterPath="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/public.ftl" />
     </list>
     <ignored path="homework-shopping.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,51 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/controller/ProductController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CustomerController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/controller/CustomerController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.806452">
-              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ftl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/index.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.451613">
-              <caret line="11" column="104" selection-start-line="11" selection-start-column="90" selection-end-line="11" selection-end-column="104" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.ftl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/include/header.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.225806">
-              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -96,49 +52,107 @@
       <file leaf-file-name="account.ftl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/account.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.903225">
-              <caret line="35" column="72" selection-start-line="35" selection-start-column="72" selection-end-line="35" selection-end-column="72" />
+            <state vertical-scroll-proportion="-9.935484">
+              <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.ftl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/edit.ftl">
+      <file leaf-file-name="ProductServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/service/impl/ProductServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.387097">
-              <caret line="15" column="76" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="226" column="0" selection-start-line="226" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editSubmit.ftl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/editSubmit.ftl">
+      <file leaf-file-name="OrderService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/service/OrderService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6704762">
-              <caret line="16" column="85" selection-start-line="16" selection-start-column="85" selection-end-line="16" selection-end-column="85" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.ftl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/index.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.225806">
+              <caret line="28" column="50" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.ftl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/login.ftl">
+      <file leaf-file-name="OrderServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/service/impl/OrderServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.258064">
-              <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.25719425">
+              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2847#2848#0" expanded="true" />
+                <element signature="e#2881#2882#0" expanded="true" />
+                <element signature="e#2940#2941#0" expanded="true" />
+                <element signature="e#2986#2987#0" expanded="true" />
+                <element signature="e#3041#3042#0" expanded="true" />
+                <element signature="e#3081#3082#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderDetailMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/dao/OrderDetailMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="50" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderDetail_sqlmap.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shopping-web/src/main/resources/mapper/OrderDetail_sqlmap.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.8387096">
+              <caret line="4" column="61" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
+              <folding>
+                <marker date="1522243512807" expanded="true" signature="358:406" placeholder="SELECT * FRO... order_detail" />
+                <marker date="1522243512807" expanded="true" signature="680:734" placeholder="DELETE FROM " />
+                <marker date="1522243512807" expanded="true" signature="905:1145" placeholder="INSERT INTO order_detail... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderDetailResp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/export/response/OrderDetailResp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pageLogin.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/js/pageLogin.js">
+      <file leaf-file-name="OrderDetailReq.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/export/request/OrderDetailReq.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5">
-              <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -152,8 +166,8 @@
         <option value="Jsp File" />
         <option value="Enum" />
         <option value="HTML File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -163,9 +177,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/public.ftl" />
-        <option value="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/publicSubmit.ftl" />
-        <option value="$PROJECT_DIR$/shopping-web/src/main/webapp/html/edit.html" />
         <option value="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/html/publicSubmit.html" />
         <option value="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/hello.ftl" />
         <option value="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/html/hello.html" />
@@ -193,27 +204,30 @@
         <option value="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/dao/OrderMapper.java" />
         <option value="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/export/request/ProductReq.java" />
         <option value="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/domain/po/OrderDetail.java" />
-        <option value="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/export/response/OrderDetailResp.java" />
         <option value="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/export/request/OrderDetailReq.java" />
-        <option value="$PROJECT_DIR$/shopping-web/src/main/resources/spring/spring-service.xml" />
         <option value="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/dao/ProductMapper.java" />
         <option value="$PROJECT_DIR$/shopping-web/src/main/resources/mapper/Product_sqlmap.xml" />
         <option value="$PROJECT_DIR$/shopping-web/src/test/java/ProductServiceTest.java" />
         <option value="$PROJECT_DIR$/shopping-web/src/main/resources/mapper/Order_sqlmap.xml" />
-        <option value="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/dao/OrderDetailMapper.java" />
         <option value="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/service/impl/ProductServiceImpl.java" />
-        <option value="$PROJECT_DIR$/shopping-web/src/main/resources/mapper/OrderDetail_sqlmap.xml" />
         <option value="$PROJECT_DIR$/shopping-web/src/main/resources/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/index.ftl" />
         <option value="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/controller/ProductController.java" />
         <option value="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/login.ftl" />
-        <option value="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/controller/CustomerController.java" />
         <option value="$PROJECT_DIR$/shopping-web/src/main/webapp/js/pageLogin.js" />
-        <option value="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/include/header.ftl" />
-        <option value="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/account.ftl" />
         <option value="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/edit.ftl" />
         <option value="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/editSubmit.ftl" />
+        <option value="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/public.ftl" />
+        <option value="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/include/header.ftl" />
+        <option value="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/service/OrderService.java" />
+        <option value="$PROJECT_DIR$/shopping-web/src/main/resources/spring/spring-service.xml" />
+        <option value="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/dao/OrderDetailMapper.java" />
+        <option value="$PROJECT_DIR$/shopping-web/src/main/resources/mapper/OrderDetail_sqlmap.xml" />
+        <option value="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/controller/CustomerController.java" />
+        <option value="$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/account.ftl" />
+        <option value="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/service/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/export/response/OrderDetailResp.java" />
       </list>
     </option>
   </component>
@@ -514,6 +528,44 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="include" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homework-shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homework-shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopping-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -567,6 +619,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homework-shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homework-shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopping-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1386,7 +1468,7 @@
       <workItem from="1519178264459" duration="8199000" />
       <workItem from="1519458190814" duration="39007000" />
       <workItem from="1521449086749" duration="22286000" />
-      <workItem from="1522065033295" duration="30061000" />
+      <workItem from="1522065033295" duration="36495000" />
     </task>
     <task id="LOCAL-00001" summary="整合freemarker 添加ftl模板">
       <created>1521449797863</created>
@@ -1424,7 +1506,13 @@
       <option name="project" value="LOCAL" />
       <updated>1522149239737</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="前端页面url调整">
+      <created>1522225897831</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1522225897831</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1460,7 +1548,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101440000" />
+    <option name="totallyTimeSpent" value="107874000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1490,6 +1578,7 @@
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2708018" sideWeight="0.4871795" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23676248" sideWeight="0.51282054" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -1499,7 +1588,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962063" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1545,7 +1633,8 @@
     <MESSAGE value="添ftl以及html &#10;编写freemarker 测试类 位于productController中" />
     <MESSAGE value="mapper bean改为扫描包&#10;修改jdbc数据库连接池为druid&#10;调整controller 接口返回类型，统一为Result，转成json格式，(addProduct为例)" />
     <MESSAGE value="实现 orderMapper , orderDetailMapper&#10;实现 购买 purchaseProduct接口 单测通过&#10;调整部分ftl页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现 orderMapper , orderDetailMapper&#10;实现 购买 purchaseProduct接口 单测通过&#10;调整部分ftl页面" />
+    <MESSAGE value="前端页面url调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="前端页面url调整" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1576,12 +1665,24 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/controller/CustomerController.java</url>
-          <line>40</line>
+          <line>47</line>
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/controller/CustomerController.java</url>
+          <line>65</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/service/impl/OrderServiceImpl.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="16" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1590,58 +1691,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/dao/CustomerMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/resources/spring/spring-mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59809524">
-          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/dao/FlowLogMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3561151">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/service/impl/CustomerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.039568346">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/dao/PublishMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/service/impl/ShopCartServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="13" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/export/response/Result.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1670,14 +1719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2769784">
           <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/service/ProductService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -1734,39 +1775,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/export/response/OrderDetailResp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/dao/ShopCartMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2769784">
           <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/resources/spring/spring-service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34666666">
-          <caret line="11" column="70" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/export/request/OrderDetailReq.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1882,58 +1895,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/resources/mapper/OrderDetail_sqlmap.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.645162">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding>
-            <marker date="1522148348753" expanded="true" signature="387:445" placeholder="SELECT * FRO... order_detail" />
-            <marker date="1522148348753" expanded="true" signature="576:630" placeholder="DELETE FROM " />
-            <marker date="1522148348753" expanded="true" signature="801:1041" placeholder="INSERT INTO order_detail... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/dao/OrderMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/dao/OrderDetailMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shopping-web/src/main/resources/mybatis-config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.645162">
           <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/service/impl/ProductServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="226" column="0" selection-start-line="226" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
-          <folding>
-            <element signature="e#12566#12567#0" expanded="true" />
-            <element signature="e#12600#12601#0" expanded="true" />
-            <element signature="e#12659#12660#0" expanded="true" />
-            <element signature="e#12705#12706#0" expanded="true" />
-            <element signature="e#12760#12761#0" expanded="true" />
-            <element signature="e#12800#12801#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1985,14 +1951,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/show.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.935484">
-          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shopping-web/src/main/resources/spring.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.225806">
@@ -2017,14 +1975,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/login.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.258064">
-          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/js/pageLogin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.5">
@@ -2041,51 +1991,199 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/controller/CustomerController.java">
+    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/editSubmit.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.258064">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/hello.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/include/header.ftl">
+    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/login.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.225806">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        <state vertical-scroll-proportion="-11.258064">
+          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/index.ftl">
+    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/public.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.451613">
-          <caret line="11" column="104" selection-start-line="11" selection-start-column="90" selection-end-line="11" selection-end-column="104" />
+        <state vertical-scroll-proportion="-14.193548">
+          <caret line="53" column="41" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/account.ftl">
+    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/publicSubmit.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.903225">
-          <caret line="35" column="72" selection-start-line="35" selection-start-column="72" selection-end-line="35" selection-end-column="72" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/show.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.16129">
+          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/edit.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.387097">
+        <state vertical-scroll-proportion="13.580646">
           <caret line="15" column="76" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/editSubmit.ftl">
+    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/service/impl/ShopCartServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6704762">
-          <caret line="16" column="85" selection-start-line="16" selection-start-column="85" selection-end-line="16" selection-end-column="85" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/include/header.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.83871">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/service/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/dao/OrderMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/resources/spring/spring-service.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.258064">
+          <caret line="25" column="68" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/export/request/OrderDetailReq.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/index.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.225806">
+          <caret line="28" column="50" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/webapp/WEB-INF/template/account.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.935484">
+          <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/service/impl/ProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="226" column="0" selection-start-line="226" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/dao/OrderDetailMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="50" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/resources/mapper/OrderDetail_sqlmap.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8387096">
+          <caret line="4" column="61" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
+          <folding>
+            <marker date="1522243512807" expanded="true" signature="358:406" placeholder="SELECT * FRO... order_detail" />
+            <marker date="1522243512807" expanded="true" signature="680:734" placeholder="DELETE FROM " />
+            <marker date="1522243512807" expanded="true" signature="905:1145" placeholder="INSERT INTO order_detail... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/export/response/OrderDetailResp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/controller/CustomerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopping-web/src/main/java/com/springmvc/service/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25719425">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2847#2848#0" expanded="true" />
+            <element signature="e#2881#2882#0" expanded="true" />
+            <element signature="e#2940#2941#0" expanded="true" />
+            <element signature="e#2986#2987#0" expanded="true" />
+            <element signature="e#3041#3042#0" expanded="true" />
+            <element signature="e#3081#3082#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

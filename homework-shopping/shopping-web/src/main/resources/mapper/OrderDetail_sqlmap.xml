@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.springmvc.dao.OrderDetailMapper">
-    <select id="getOrderDetailsByOrderId" parameterType="com.springmvc.export.request.OrderDetailReq"
+    <select id="getOrderDetailsByOrderId" parameterType="java.util.List"
             resultType="com.springmvc.export.response.OrderDetailResp">
-        SELECT * FROM `order_detail` WHERE `order_id` = #{orderId};
+        SELECT * FROM `order_detail` WHERE `order_id` IN
+        <foreach collection="orderIds" item="orderId" open="(" close=")" index="index" separator=",">
+            #{orderId}
+        </foreach>
     </select>
 
     <delete id="deleteOrderDetailsByOrderId" parameterType="com.springmvc.export.request.OrderDetailReq">
