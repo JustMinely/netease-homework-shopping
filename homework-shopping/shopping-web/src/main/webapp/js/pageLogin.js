@@ -17,10 +17,10 @@
 					loading.show();
 					ajax({
 						data:{userName:value1,password:value2},
-						url:'/api/login',
+						url:'/customer/loginAction',
 						success:function(result){
 							loading.hide();
-							location.href = '/';
+							location.href = result;
 						},
 						error:function(message){
 							loading.result(message||'登录失败');

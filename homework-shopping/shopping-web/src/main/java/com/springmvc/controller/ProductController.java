@@ -133,5 +133,19 @@ public class ProductController {
         return new Result(false, ResultCode.FAILURE.value(), "操作失败");
     }
 
+    @RequestMapping("index")
+    public ModelAndView index() {
+        List<Product> result = new ArrayList<>();
+        try {
+            result = productService.getAllProducts();
+            ModelAndView modelAndView = new ModelAndView("index");
+            modelAndView.addObject("productList", result);
+            return modelAndView;
+        } catch (Exception e) {
+            LOGGER.error("index...fail", GsonUtils.toJSONString(result), e);
+        }
+        return new ModelAndView("index");
+    }
+
 
 }

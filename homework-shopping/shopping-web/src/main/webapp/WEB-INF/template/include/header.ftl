@@ -8,11 +8,11 @@
                 买家你好,<span class="name">${user.consumerName}</span>！<a href="/logout">[退出]</a>
             </#if>你好，
         <#else>
-            请<a href="/login">[登录]</a>
+            请<a href="/customer/login">[登录]</a>
         </#if>
         </div>
         <ul class="nav">
-            <li><a href="/">首页</a></li>
+            <li><a href="/product/getAllProducts">首页</a></li>
             <#if user && user.usertype==0>
             <li><a href="/account">账务</a></li>
             </#if>

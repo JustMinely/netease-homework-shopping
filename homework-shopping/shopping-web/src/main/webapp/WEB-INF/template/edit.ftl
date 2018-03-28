@@ -18,31 +18,31 @@
                 <label class="fmlab">标题：</label>
                 <div class="fmipt">
                     <input type="hidden" name="id" value="${product.id}"/>
-                    <input class="u-ipt ipt" name="title" value="${product.title}" placeholder="2-80字符"/>
+                    <input class="u-ipt ipt" name="title" value="${product.productName}" placeholder="2-80字符"/>
                 </div>
             </div>
             <div class="fmitem">
                 <label class="fmlab">摘要：</label>
                 <div class="fmipt">
-                    <input class="u-ipt ipt" name="summary" value="${product.summary}" placeholder="2-140字符"／>
+                    <input class="u-ipt ipt" name="summary" value="${product.productPriceDesc}" placeholder="2-140字符"／>
                 </div>
             </div>
             <div class="fmitem">
                 <label class="fmlab">图片：</label>
                 <div class="fmipt">
-                    <input class="u-ipt ipt" name="image" value="${product.image}" placeholder="图片地址"/>
+                    <input class="u-ipt ipt" name="image" value="${product.productUrl}" placeholder="图片地址"/>
                 </div>
             </div>
             <div class="fmitem">
                 <label class="fmlab">正文：</label>
                 <div class="fmipt">
-                    <textarea class="u-ipt" name="detail" rows="10" placeholder="2-1000个字符">${product.detail}</textarea>
+                    <textarea class="u-ipt" name="detail" rows="10" placeholder="2-1000个字符">${product.productContent}</textarea>
                 </div>
             </div>
             <div class="fmitem">
                 <label class="fmlab">价格：</label>
                 <div class="fmipt">
-                    <input class="u-ipt price" name="price" value="${product.price}"/>元
+                    <input class="u-ipt price" name="price" value="${product.productPrice}"/>元
                 </div>
             </div>
             <div class="fmitem fmitem-nolab fmitem-btn">
@@ -51,12 +51,12 @@
                 </div>
             </div>
         </form>
-        <span class="imgpre"><img src="${product.image}" alt="" id="imgpre"></span>
+        <span class="imgpre"><img src="${product.productUrl}" alt="" id="imgpre"></span>
     </div>
     </#if>
 </div>
 
-<script type="text/javascript" src="../js/global.js"></script>
-<script type="text/javascript" src="../js/public.js"></script>
+<script type="text/javascript" src="../../js/global.js"></script>
+<script type="text/javascript" src="../../js/public.js"></script>
 </body>
 </html>

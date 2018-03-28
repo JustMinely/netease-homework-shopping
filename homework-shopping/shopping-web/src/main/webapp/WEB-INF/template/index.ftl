@@ -29,7 +29,7 @@
                             <a href="/product/show?id=${x.id}" class="link">
                                 <div class="img"><img src="${x.productUrl}" alt="${x.productName}"></div>
                                 <h3>${x.productName}</h3>
-                                <div class="price"><span class="v-unit">¥</span><span class="v-value">${x.price}</span>
+                                <div class="price"><span class="v-unit">¥</span><span class="v-value">${x.productPrice}</span>
                                 </div>
                             </a>
                         </li>
