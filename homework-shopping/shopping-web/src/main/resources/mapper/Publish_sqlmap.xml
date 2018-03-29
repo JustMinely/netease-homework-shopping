@@ -6,7 +6,7 @@
         INSERT INTO publish(merchant_id,product_id) VALUES(#{merchantId},#{productId});
     </insert>
     <select id="findProductIdsByMerchantId" parameterType="java.lang.Long" resultType="java.lang.Long">
-        SELECT * FROM publish WHERE merchant_id = #{merchantId};
+        SELECT product_id FROM publish WHERE merchant_id = #{merchantId};
     </select>
     <delete id="deletePublishUnPurchaseProduct" parameterType="com.springmvc.export.request.PublishReq">
         DELETE FROM publish WHERE merchant_id = #{merchantId} AND product_id = #{productId};

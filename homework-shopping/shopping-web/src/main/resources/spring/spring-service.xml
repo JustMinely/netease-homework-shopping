@@ -24,7 +24,11 @@
     <bean id="orderService" class="com.springmvc.service.impl.OrderServiceImpl">
         <property name="orderMapper" ref="orderMapper"/>
         <property name="orderDetailMapper" ref="orderDetailMapper"/>
+    </bean>
 
+    <bean id="publishService" class="com.springmvc.service.impl.PublishServiceImpl">
+        <property name="publishMapper" ref="publishMapper"/>
+        <property name="productMapper" ref="productMapper"/>
     </bean>
 
 
