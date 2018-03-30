@@ -18,9 +18,19 @@
 					ajax({
 						data:{userName:value1,password:value2},
 						url:'/customer/loginAction',
+						type:"post",
+						dataType:"json",
 						success:function(result){
-							loading.hide();
-							location.href = result;
+							if(result.userName == "seller"){
+								loading.hide();
+								location.href = "/merchant/index";
+							}else if(result.userName == "buyer"){
+								loading.hide();
+								location.href = "/product/getAllProducts";
+							}else{
+								alert("登录失败");
+							}
+
 						},
 						error:function(message){
 							loading.result(message||'登录失败');

@@ -3,9 +3,9 @@
         <div class="user">
         <#if user>
             <#if user.usertype==1>
-                卖家你好，<span class="name">${user.merchantName}</span>！<a href="/logout">[退出]</a>
+                卖家你好，<span class="name">${user.merchantName}</span>！<a href="/customer/logout">[退出]</a>
             <#else>
-                买家你好,<span class="name">${user.consumerName}</span>！<a href="/logout">[退出]</a>
+                买家你好,<span class="name">${user.consumerName}</span>！<a href="/customer/logout">[退出]</a>
             </#if>你好，
         <#else>
             请<a href="/customer/login">[登录]</a>

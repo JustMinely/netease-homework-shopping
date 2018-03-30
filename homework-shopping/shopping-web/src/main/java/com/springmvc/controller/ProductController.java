@@ -2,12 +2,10 @@ package com.springmvc.controller;
 
 import com.springmvc.common.utils.GsonUtils;
 import com.springmvc.common.utils.HttpUtils;
+import com.springmvc.domain.po.Merchant;
 import com.springmvc.domain.po.Product;
 import com.springmvc.export.request.ProductReq;
-import com.springmvc.export.response.CustomerResp;
-import com.springmvc.export.response.ProductResp;
-import com.springmvc.export.response.Result;
-import com.springmvc.export.response.ResultCode;
+import com.springmvc.export.response.*;
 import com.springmvc.service.ProductService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,6 +19,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,12 +36,10 @@ public class ProductController {
     private ProductService productService;
 
     @RequestMapping("getAllProducts")
-    public ModelAndView getAllProducts() {
+    public ModelAndView getAllProducts(HttpSession httpSession) {
         List<Product> result = new ArrayList<>();
         try {
-            CustomerResp customerResp = new CustomerResp();
-            customerResp.setCustomerName("buyer");
-
+            CustomerResp customerResp = (CustomerResp) httpSession.getAttribute("user");
 
             result = productService.getAllProducts();
             ModelAndView modelAndView = new ModelAndView("index");
@@ -56,11 +53,10 @@ public class ProductController {
     }
 
     @RequestMapping("getUnPurchasedProducts")
-    public ModelAndView getUnPurchasedProducts() {
+    public ModelAndView getUnPurchasedProducts(HttpSession httpSession) {
         List<Product> result = new ArrayList<>();
         try {
-            CustomerResp customerResp = new CustomerResp();
-            customerResp.setCustomerName("buyer");
+            CustomerResp customerResp = (CustomerResp) httpSession.getAttribute("user");
             result = productService.getAllUnPurchasedProducts();
             ModelAndView modelAndView = new ModelAndView("index");
             modelAndView.addObject("productList", result);
@@ -86,7 +82,6 @@ public class ProductController {
     @RequestMapping("deleteProduct")
     @ResponseBody
     public void deleteProduct(HttpServletResponse response, @RequestBody ProductReq req) {
-        //TODO
         try {
             HttpUtils.writeJson(response, productService.deleteUnPurcharseProduct(req));
         } catch (Exception e) {
@@ -134,11 +129,15 @@ public class ProductController {
     }
 
     @RequestMapping("index")
-    public ModelAndView index() {
+    public ModelAndView index(HttpSession httpSession) {
         List<Product> result = new ArrayList<>();
         try {
-            result = productService.getAllProducts();
             ModelAndView modelAndView = new ModelAndView("index");
+            MerchantResp merchantResp =  (MerchantResp) httpSession.getAttribute("seller");
+            if (merchantResp != null){
+                modelAndView.addObject("user",merchantResp);
+            }
+            result = productService.getAllProducts();
             modelAndView.addObject("productList", result);
             return modelAndView;
         } catch (Exception e) {

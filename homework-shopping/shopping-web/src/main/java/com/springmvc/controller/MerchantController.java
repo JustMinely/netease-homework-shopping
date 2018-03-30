@@ -22,7 +22,7 @@ public class MerchantController {
     @Resource(name = "publishService")
     private PublishService publishService;
 
-    @RequestMapping(name = "publish")
+    @RequestMapping("publish")
     public ModelAndView publishProduct() {
         return new ModelAndView("public");
     }
